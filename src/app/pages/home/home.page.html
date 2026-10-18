@@ -1,6 +1,6 @@
+
 <ion-header>
   <ion-toolbar color="primary">
-
     <ion-title>IntelliPark</ion-title>
 
     <ion-buttons slot="end">
@@ -8,16 +8,14 @@
         Salir
       </ion-button>
     </ion-buttons>
-
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
 
+  <!-- Tarjeta de bienvenida -->
   <ion-card>
-
     <ion-card-header>
-
       <ion-card-title>
         Bienvenido, {{ user()?.user_first_name }}
       </ion-card-title>
@@ -25,11 +23,9 @@
       <ion-card-subtitle>
         Operación del parqueadero
       </ion-card-subtitle>
-
     </ion-card-header>
 
     <ion-card-content>
-
       <ion-button
         expand="block"
         size="large"
@@ -37,9 +33,40 @@
       >
         Registrar vehículo
       </ion-button>
-
     </ion-card-content>
+  </ion-card>
 
+  <!-- Nueva tarjeta informativa -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        Información del parqueadero
+      </ion-card-title>
+
+      <ion-card-subtitle>
+        Recomendaciones para el operador
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>
+        <strong>Verificación de placa:</strong>
+        recuerda revisar la placa del vehículo antes
+        de confirmar el ingreso.
+      </p>
+
+      <p>
+        <strong>Tipo de vehículo:</strong>
+        comprueba que la categoría seleccionada
+        corresponda al vehículo que ingresa.
+      </p>
+
+      <p>
+        <strong>Registro:</strong>
+        mantén la información del ingreso clara
+        y completa.
+      </p>
+    </ion-card-content>
   </ion-card>
 
 </ion-content>
